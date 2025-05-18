@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cajero</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cajero Automatico</h1>
+            <h2>Su saldo es de: <span>$</span><span id="saldo"></span></h2>
+            <h3>Ingrese los datos</h3>
+            <input
+                type="text"
+                class="input input-nombre"
+                placeholder="nombre"
+            />
+            <input
+                type="number"
+                class="input input-cedula"
+                placeholder="cedula"
+            />
+            <input
+                type="number"
+                class="input input-retiro"
+                placeholder="retiro"
+            />
+            <div class="botones">
+                <button class="boton" onclick="retirar()">Retirar</button>
+                <button class="boton boton-rojo" onclick="menuPrincipal()">
+                    Volver
+                </button>
+            </div>
+
+            <p class="texto"></p>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            actualizarSaldo();
+        </script>
+    </body>
+</html>

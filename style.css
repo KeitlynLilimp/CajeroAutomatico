@@ -1,0 +1,126 @@
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    background-color: #007;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.container {
+    max-width: 90rem;
+    width: 90%;
+    margin: 10rem auto;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #119;
+    margin: 1rem auto;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+
+span {
+    color: green;
+}
+
+.text-menu {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+.input {
+    padding: 1rem 5rem;
+    margin: 3rem auto;
+    display: block;
+    outline: none;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+.input::placeholder {
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton {
+    padding: 1.3rem 5rem;
+    background-color: #007;
+    width: 30%;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 auto;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+}
+
+.boton-rojo {
+    background-color: #780000;
+}
+
+.texto {
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    font-weight: bold;
+}
+
+.reiniciar {
+    background-color: #901;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 1;
+    }
+
+    .input {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .boton {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
